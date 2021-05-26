@@ -93,8 +93,6 @@ $signature = sha1($string);
 ?>
 
 
-
-<!DOCTYPE html>
 <html>
 <head lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -146,6 +144,8 @@ $signature = sha1($string);
 
 </body>
 
+</html>
+
 
 <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 
@@ -186,5 +186,3 @@ $signature = sha1($string);
 
     });
 </script>
-
-</html>
