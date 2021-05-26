@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // 声明页面header
 header("Content-type:charset=utf-8");
 
@@ -140,6 +140,10 @@ $signature = sha1($string);
   <script type="text/javascript" src="assets/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="assets/index.js"></script>
 
+<div class="msgbox" style="position: fixed; left: 0px; top: 40%; height: 10%; width: 100%; text-align: center; color: white; z-index: 99999999; line-height: 10%; display: none;"><span style="padding: 2.5% 8%; border-radius: 6px; font-family: 微软雅黑; font-size: 24px; background-color: rgba(0, 0, 0, 0.498039);">请输入名字</span></div>
+</body>
+</html>
+
 <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 
 <script>
@@ -179,14 +183,3 @@ $signature = sha1($string);
 
     });
 </script>
-
-
-
-<div class="msgbox" style="position: fixed; left: 0px; top: 40%; height: 10%; width: 100%; text-align: center; color: white; z-index: 99999999; line-height: 10%; display: none;"><span style="padding: 2.5% 8%; border-radius: 6px; font-family: 微软雅黑; font-size: 24px; background-color: rgba(0, 0, 0, 0.498039);">请输入名字</span></div>
-
-
-</body>
-
-</html>
-
-
