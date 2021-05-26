@@ -93,10 +93,12 @@ $signature = sha1($string);
 ?>
 
 
+
+
+<!DOCTYPE html>
 <html>
 <head lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta charset="utf-8">
 <meta name="apple-touch-fullscreen" content="YES">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=device-dpi">
@@ -139,17 +141,18 @@ $signature = sha1($string);
   <img class="shareImg" id="shareImg" style="display:block" src="" alt=""> </div>
   <script type="text/javascript" src="assets/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="assets/index.js"></script>
-
 <div class="msgbox" style="position: fixed; left: 0px; top: 40%; height: 10%; width: 100%; text-align: center; color: white; z-index: 99999999; line-height: 10%; display: none;"><span style="padding: 2.5% 8%; border-radius: 6px; font-family: 微软雅黑; font-size: 24px; background-color: rgba(0, 0, 0, 0.498039);">请输入名字</span></div>
+
+
 </body>
-</html>
+<!-- </html> -->
 
 <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 
 <script>
     var url = location.href;
     wx.config({
-       debug: true, // 正式上线后改成false不在弹出调试信息
+       debug: false, // 正式上线后改成false不在弹出调试信息
        appId: '<?php echo $appid;?>',
        timestamp: '<?php echo $timestamp;?>',
        nonceStr: '<?php echo $nonceStr;?>',
@@ -183,3 +186,5 @@ $signature = sha1($string);
 
     });
 </script>
+
+</html>
